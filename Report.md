@@ -6,7 +6,7 @@
 [image4]: images/plot.JPG "plot"
 
 
-## Deep Reinforcement Learning Continuous Control Project Submission Report
+## Deep Reinforcement Learning Collaboration and Competition Project Submission Report
 
 ### Overview
 
