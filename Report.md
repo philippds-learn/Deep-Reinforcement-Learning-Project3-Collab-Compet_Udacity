@@ -44,11 +44,11 @@ More about A3C Q-Prop:
 n_episodes (int): maximum number of training episodes = 1000<br />
 
 ##### For ddpg Agent:
-BUFFER_SIZE (int): replay buffer size = int(1e7)<br />
-BATCH_SIZE (int): minibatch size = 128<br />
+BUFFER_SIZE (int): replay buffer size = int(1e5)<br />
+BATCH_SIZE (int): minibatch size = 512<br />
 GAMMA (float): discount factor = 0.999<br />
 TAU (int): for soft update of target parameters = 1e-2<br />
-LR_ACTOR (int): learning rate of the actor = 1e-4<br />
+LR_ACTOR (int): learning rate of the actor = 1e-3<br />
 LR_CRITIC (int): learning rate of the critic = 1e-3<br />
 WEIGHT_DECAY (float): L2 weight decay = 0<br />
 
