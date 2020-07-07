@@ -6,6 +6,7 @@ from ddpg_agent import Agent
 from ddpg_agent import ReplayBuffer
 
 import numpy as np
+import torch
 
 class maddpg:
     def __init__(self, state_size, action_size, random_seed, num_agents):
@@ -37,6 +38,7 @@ class maddpg:
         for i in range(self.num_agents):
             torch.save(self.agents[i].actor_local.state_dict(), 'agent{}_checkpoint_actor.pth'.format(i+1))
             torch.save(self.agents[i].critic_local.state_dict(), 'agent{}_checkpoint_critic.pth'.format(i+1))
+
 
     def reset(self):
         for agent in self.agents:
